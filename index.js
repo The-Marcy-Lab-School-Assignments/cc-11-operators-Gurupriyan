@@ -21,11 +21,14 @@ function areAllFourSame(a, b, c, d){
 
 //5
 function areAllFourSameOrEqual(a, b, c, d){
-    if (a == b && b == c && c == d){
-        if (a === b && b === c && c === d){
-            return "equal";
-        }else return "same";
-    }else return null;
+    // if (a == b && b == c && c == d){
+    //     if (a === b && b === c && c === d){
+    //         return "equal";
+    //     }else return "same";
+    // }else return null;
+    
+    return (a == b && b == c && c == d) ? ((a === b && b === c && c === d) ? "equal" : "same") : null;
 }
 
-console.log(areAllFourSameOrEqual())
+console.log(areAllFourSameOrEqual(1, 1, "1", 2))
+
